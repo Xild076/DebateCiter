@@ -37,7 +37,7 @@ def analyze_article():
 
         result_label.insert(
             tk.END,
-            f"{name}, {occupations}, {date_str} [{name}; {occupations}; {publisher}; '{article_title}'; {date_formatted}; {url}; DOA: {current_date_str}] // {ur_alias}"
+            f"{name}, {occupations.split(',')[0]}, {date_str} [{name}; {occupations}; {publisher}; '{article_title}'; {date_formatted}; {url}; DOA: {current_date_str}] // {ur_alias}"
         )
     except Exception as e:
         # Provide an informative error message to the user
